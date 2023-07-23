@@ -8,16 +8,18 @@ public class BuildingTypeSO : ScriptableObject
     public string nameString;
     public Transform perfabs;
     public Sprite sprite;
+    public bool hasResourceGenerateData;
     public ResourceGenerateData resourceGenerateData;
     public float minConstructionRadius;
     public ResourceCostAmount[] constructionResourceCostArray;
+    public int maxhealthAmount;
 
     public string GetConstructionResourceCostString()
     {
         string str = "";
         foreach(ResourceCostAmount resourceAmount in constructionResourceCostArray)
         {
-            str += resourceAmount.resourceTypeSO.nameString + ":" + resourceAmount.amount;
+            str += "<color=#"+resourceAmount.resourceTypeSO.colorHex+">  "+resourceAmount.resourceTypeSO.nameShort + resourceAmount.amount +"</color>";
 
           
         }

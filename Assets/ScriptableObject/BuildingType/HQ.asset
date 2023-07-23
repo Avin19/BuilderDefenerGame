@@ -15,9 +15,12 @@ MonoBehaviour:
   nameString: Head Quaters
   perfabs: {fileID: 7507160756143367328, guid: 57263b3182c64594993f2bf8af8bec9c, type: 3}
   sprite: {fileID: 21300000, guid: 7030b8e3eb49e8440ae8eb3ec8b45d05, type: 3}
+  hasResourceGenerateData: 1
   resourceGenerateData:
     maxTimer: 0.5
     resourceType: {fileID: 11400000, guid: 354d63219fc066640b30a3ddac4e6ff9, type: 2}
     resourceDetectionRadius: 7
     mxResourceAmount: 7
   minConstructionRadius: 5
+  constructionResourceCostArray: []
+  maxhealthAmount: 150

@@ -26,7 +26,13 @@ private void BuildingManager_OnActiveTypeBuildingChange(object sender, BuildingM
       }
       else{
         Show(e.activeBuildingType.sprite);
+        if(e.activeBuildingType.hasResourceGenerateData)
+        {
         resourceNearbyOverlay.Show(e.activeBuildingType.resourceGenerateData);
+      }else
+      {
+        resourceNearbyOverlay.Hide();
+      }
       }
 }
 

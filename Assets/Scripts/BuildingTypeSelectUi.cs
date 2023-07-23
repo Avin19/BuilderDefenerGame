@@ -52,7 +52,7 @@ public class BuildingTypeSelectUi : MonoBehaviour
            mouseEnterExitEvent = btnTransform.GetComponent<MouseEnterExitEvent>();
             mouseEnterExitEvent.OnMouseEnter += (object sender, EventArgs e) =>
             {
-                ToolTipUI.Instance.Show(buildingtype.nameString);
+                ToolTipUI.Instance.Show(buildingtype.nameString + "\n" + buildingtype.GetConstructionResourceCostString());
             };
             mouseEnterExitEvent.OnMouseExit += (object sender, EventArgs e) => { ToolTipUI.Instance.Hide(); };
 

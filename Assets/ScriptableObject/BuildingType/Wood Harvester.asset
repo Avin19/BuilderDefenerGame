@@ -15,6 +15,7 @@ MonoBehaviour:
   nameString: Wood Harverster
   perfabs: {fileID: 7507160756143367328, guid: 7603210ef8ecdfe4b90f481e59b1b508, type: 3}
   sprite: {fileID: 21300000, guid: 793ca27a5a3378149aaa12abe85933f4, type: 3}
+  hasResourceGenerateData: 1
   resourceGenerateData:
     maxTimer: 0.5
     resourceType: {fileID: 11400000, guid: 354d63219fc066640b30a3ddac4e6ff9, type: 2}
@@ -24,3 +25,4 @@ MonoBehaviour:
   constructionResourceCostArray:
   - resourceTypeSO: {fileID: 11400000, guid: 354d63219fc066640b30a3ddac4e6ff9, type: 2}
     amount: 10
+  maxhealthAmount: 100

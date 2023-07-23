@@ -15,6 +15,7 @@ MonoBehaviour:
   nameString: Gold Harverster
   perfabs: {fileID: 7507160756143367328, guid: bc3acc2cbfe53644bab431c98ce4dbbb, type: 3}
   sprite: {fileID: 21300000, guid: 8ead931dd91bff8489e75de9c414f17f, type: 3}
+  hasResourceGenerateData: 1
   resourceGenerateData:
     maxTimer: 2
     resourceType: {fileID: 11400000, guid: 5921316fccf56094f89cccd46e85003f, type: 2}
@@ -26,3 +27,4 @@ MonoBehaviour:
     amount: 50
   - resourceTypeSO: {fileID: 11400000, guid: 609e9252208851040be09ad4aa88d674, type: 2}
     amount: 50
+  maxhealthAmount: 100
