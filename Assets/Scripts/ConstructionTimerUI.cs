@@ -1,0 +1,18 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.UI;
+
+public class ConstructionTimerUI : MonoBehaviour
+{
+    [SerializeField] private BuildingConstruction buildingConstruction;
+    private Image constructionProgressimage;
+
+    private void Awake() {
+        constructionProgressimage = transform.Find( "mask").Find("image").GetComponent<Image>();
+        
+    }
+    private void Update() {
+        constructionProgressimage.fillAmount = buildingConstruction.GetConstrustionTimerNormalized();
+    }
+}
