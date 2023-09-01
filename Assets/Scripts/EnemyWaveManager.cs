@@ -5,6 +5,7 @@ using System;
 
 public class EnemyWaveManager : MonoBehaviour
 {
+    public static EnemyWaveManager Instance {get; private set;}
 
     public event EventHandler OnWaveNumberChange;
 
@@ -20,6 +21,9 @@ public class EnemyWaveManager : MonoBehaviour
     private Vector3 spawnPoint;
     private State state;
     [SerializeField]private Transform nextSpawnPosition;
+    private void Awake() {
+        Instance =this;
+    }
     private void Start()
     {
         state = State.WaitingToSpawnNewWave;
@@ -46,6 +50,7 @@ public class EnemyWaveManager : MonoBehaviour
                     {
                         spawnRemainingEnemyTimer = UnityEngine.Random.Range(0f, 0.2f);
                         Emeny.Create(spawnPoint + UtilsClass.GetRandomDir() * UnityEngine.Random.Range(0, 10f));
+                        Soundmanager.Instance.PlaySound(Soundmanager.Sound.EnemyWaveStarting);
                         remainingEnemyAmount--;
                         if (remainingEnemyAmount <= 0)
                         {
@@ -68,7 +73,7 @@ public class EnemyWaveManager : MonoBehaviour
     {
         
 
-        remainingEnemyAmount = 5 + 3* wave;
+        remainingEnemyAmount = 30 + 3* wave;
         state = State.SpawningWave;
         wave ++;
         OnWaveNumberChange?.Invoke(this, EventArgs.Empty);

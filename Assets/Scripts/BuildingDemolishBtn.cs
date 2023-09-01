@@ -5,7 +5,6 @@ using UnityEngine.UI;
 
 public class BuildingDemolishBtn : MonoBehaviour
 {
-  private Button demolisgBtn;
   [SerializeField] private Building building;
   private void Awake() {
     transform.Find("Button").GetComponent<Button>().onClick.AddListener(()=>{

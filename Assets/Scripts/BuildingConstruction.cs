@@ -35,6 +35,7 @@ public class BuildingConstruction : MonoBehaviour
         if(construstionTimer<=0f)
         {
             Instantiate(buildingType.perfabs,transform.position, Quaternion.identity);
+            Soundmanager.Instance.PlaySound(Soundmanager.Sound.BuildingPlaced);
             Destroy(gameObject);
         }
     }
