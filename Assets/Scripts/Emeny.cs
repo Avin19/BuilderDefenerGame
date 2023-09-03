@@ -19,10 +19,13 @@ public class Emeny : MonoBehaviour
     private Rigidbody2D rigidbody2D;
     private HealthSystem healthSystem;
     private float lookForTimer, maxlookforTimer = 0.2f;
-
-    private void Start()
+    void Awake()
     {
         rigidbody2D = GetComponent<Rigidbody2D>();
+    }
+    private void Start()
+    {
+        
         if (BuildingManager.Instance.GetHqBuilding() != null)
         {
             targetTransfrom = BuildingManager.Instance.GetHqBuilding().transform;

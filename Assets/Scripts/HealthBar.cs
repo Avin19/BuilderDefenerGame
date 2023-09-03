@@ -34,8 +34,9 @@ public class HealthBar : MonoBehaviour
 
     private void UpdateHealthBar()
     {
-        barTransform.localScale = new Vector3(healthSystem.GetHealthAmountNormalized(),1f,1f);
+       
         HealthBarVisible();
+         barTransform.localScale = new Vector3(healthSystem.GetHealthAmountNormalized(),1f,1f);
     }
 
     private void HealthBarVisible()
