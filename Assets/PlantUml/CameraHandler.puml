@@ -1,0 +1,12 @@
+@startuml
+class CameraHandler {
+    - cinemachineVirtualCamera : CinemachineVirtualCamera
+    - orthograhicsize : float
+    - targetOrthograhicsize : float
+    - Start() : void
+    - Update() : void
+    - MovementHandler() : void
+    - ZoomHandler() : void
+}
+MonoBehaviour <|-- CameraHandler
+@enduml

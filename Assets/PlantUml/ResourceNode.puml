@@ -1,0 +1,6 @@
+@startuml
+class ResourceNode {
+    + resourceTypeSO : ResourceTypeSO
+}
+MonoBehaviour <|-- ResourceNode
+@enduml

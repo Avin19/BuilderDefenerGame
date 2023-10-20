@@ -1,0 +1,6 @@
+@startuml
+class BuildingTypeListSO {
+    + List : List<BuildingTypeSO>
+}
+ScriptableObject <|-- BuildingTypeListSO
+@enduml

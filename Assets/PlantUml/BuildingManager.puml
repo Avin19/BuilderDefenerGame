@@ -1,0 +1,24 @@
+@startuml
+class BuildingManager {
+    + {static} Instance : BuildingManager <<get>>
+    - activeBuildingType : BuildingTypeSO
+    - buildingTypeList : BuildingTypeListSO
+    - mainCamera : Camera
+    - hqbuilding : Building
+    +  <<event>> OnActiveTypeBuildingChange : EventHandler<OnActiveTypeBuildingChangeEventArgs> 
+    - Awake() : void
+    - Start() : void
+    - HqBuilding_OnDied(sender:object, e:EventArgs) : void
+    - Update() : void
+    + SetActiveBuildingType(buildingType:BuildingTypeSO) : void
+    + GetActiveBuildingType() : BuildingTypeSO
+    - CanSpawnBuilding(buildingType:BuildingTypeSO, position:Vector3, errorMessage:string) : bool
+    + GetHqBuilding() : Building
+}
+class OnActiveTypeBuildingChangeEventArgs {
+    + activeBuildingType : BuildingTypeSO
+}
+MonoBehaviour <|-- BuildingManager
+BuildingManager +-- OnActiveTypeBuildingChangeEventArgs
+EventArgs <|-- OnActiveTypeBuildingChangeEventArgs
+@enduml

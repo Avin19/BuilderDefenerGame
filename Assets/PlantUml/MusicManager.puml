@@ -1,0 +1,12 @@
+@startuml
+class MusicManager {
+    + {static} Instance : MusicManager <<get>>
+    - audioSource : AudioSource
+    - volume : float = 0.5f
+    - Awake() : void
+    + IncreaseVolume() : void
+    + DcreasesVolume() : void
+    + GetVolume() : float
+}
+MonoBehaviour <|-- MusicManager
+@enduml

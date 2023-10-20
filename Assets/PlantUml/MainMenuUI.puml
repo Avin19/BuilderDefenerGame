@@ -1,0 +1,6 @@
+@startuml
+class MainMenuUI {
+    - Awake() : void
+}
+MonoBehaviour <|-- MainMenuUI
+@enduml

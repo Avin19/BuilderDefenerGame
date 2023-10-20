@@ -1,0 +1,10 @@
+@startuml
+class SpirtePositionSortingOrder {
+    - spriteRenderer : SpriteRenderer
+    - runOnce : bool
+    - positionOffsetY : float
+    - Awake() : void
+    - LateUpdate() : void
+}
+MonoBehaviour <|-- SpirtePositionSortingOrder
+@enduml

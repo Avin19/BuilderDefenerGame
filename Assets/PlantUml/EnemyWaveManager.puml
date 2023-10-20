@@ -1,0 +1,27 @@
+@startuml
+class EnemyWaveManager {
+    + {static} Instance : EnemyWaveManager <<get>>
+    +  <<event>> OnWaveNumberChange : EventHandler 
+    - spawnEnemyPositionList : List<Transform>
+    - spawnNextWaveTimer : float
+    - spawnRemainingEnemyTimer : float
+    - remainingEnemyAmount : int
+    - wave : int
+    - spawnPoint : Vector3
+    - state : State
+    - nextSpawnPosition : Transform
+    - Awake() : void
+    - Start() : void
+    - Update() : void
+    - SpawnEnemy() : void
+    + NextWave() : int
+    + NextWaveTimer() : float
+    + NextSpawnpoint() : Vector3
+}
+enum State {
+    WaitingToSpawnNewWave,
+    SpawningWave,
+}
+MonoBehaviour <|-- EnemyWaveManager
+EnemyWaveManager +-- State
+@enduml

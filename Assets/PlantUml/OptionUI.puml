@@ -1,0 +1,10 @@
+@startuml
+class OptionUI {
+    - soundText : TextMeshProUGUI
+    - musicText : TextMeshProUGUI
+    - Awake() : void
+    - Start() : void
+    + Show() : void
+}
+MonoBehaviour <|-- OptionUI
+@enduml

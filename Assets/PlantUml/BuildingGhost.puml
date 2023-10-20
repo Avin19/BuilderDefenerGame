@@ -1,0 +1,13 @@
+@startuml
+class BuildingGhost {
+    - spriteGameObject : GameObject
+    - resourceNearbyOverlay : ResourceNearbyOverlay
+    - Awake() : void
+    - Start() : void
+    - BuildingManager_OnActiveTypeBuildingChange(sender:object, e:BuildingManager.OnActiveTypeBuildingChangeEventArgs) : void
+    - Update() : void
+    - Show(ghotsSprite:Sprite) : void
+    - Hide() : void
+}
+MonoBehaviour <|-- BuildingGhost
+@enduml

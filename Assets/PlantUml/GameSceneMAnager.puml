@@ -1,0 +1,10 @@
+@startuml
+class GameSceneMAnager <<static>> {
+    + {static} Load(sceneLoad:Scene) : void
+}
+enum Scene {
+    GameScene,
+    MainMenuScene,
+}
+GameSceneMAnager +-- Scene
+@enduml

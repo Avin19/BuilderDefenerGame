@@ -1,0 +1,7 @@
+@startuml
+class BuildingDemolishBtn {
+    - building : Building
+    - Awake() : void
+}
+MonoBehaviour <|-- BuildingDemolishBtn
+@enduml

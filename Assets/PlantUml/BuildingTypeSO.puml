@@ -1,0 +1,15 @@
+@startuml
+class BuildingTypeSO {
+    + nameString : string
+    + perfabs : Transform
+    + sprite : Sprite
+    + hasResourceGenerateData : bool
+    + resourceGenerateData : ResourceGenerateData
+    + minConstructionRadius : float
+    + constructionResourceCostArray : ResourceCostAmount[]
+    + maxhealthAmount : int
+    + constructionTimerMax : float
+    + GetConstructionResourceCostString() : string
+}
+ScriptableObject <|-- BuildingTypeSO
+@enduml

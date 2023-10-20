@@ -1,0 +1,10 @@
+@startuml
+class ResourceNearbyOverlay {
+    - resourceGenerateData : ResourceGenerateData
+    - Awake() : void
+    - Update() : void
+    + Show(resourceGenerateData:ResourceGenerateData) : void
+    + Hide() : void
+}
+MonoBehaviour <|-- ResourceNearbyOverlay
+@enduml

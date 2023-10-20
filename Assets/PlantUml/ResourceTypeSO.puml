@@ -1,0 +1,9 @@
+@startuml
+class ResourceTypeSO {
+    + nameString : string
+    + nameShort : string
+    + sprite : Sprite
+    + colorHex : string
+}
+ScriptableObject <|-- ResourceTypeSO
+@enduml

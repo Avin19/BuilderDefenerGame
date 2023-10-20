@@ -1,0 +1,12 @@
+@startuml
+class Arrow {
+    + {static} Create(position:Vector3, emeny:Emeny) : Arrow
+    - targetEmeny : Emeny
+    - lastMove : Vector3
+    - timeToDie : float = 2f
+    - Update() : void
+    - OnTriggerEnter2D(other:Collider2D) : void
+    - SetTargetEmeny(targetEmeney:Emeny) : void
+}
+MonoBehaviour <|-- Arrow
+@enduml

@@ -1,0 +1,6 @@
+@startuml
+class ResourceCostAmount {
+    + resourceTypeSO : ResourceTypeSO
+    + amount : int
+}
+@enduml

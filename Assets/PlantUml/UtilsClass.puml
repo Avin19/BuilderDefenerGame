@@ -1,0 +1,8 @@
+@startuml
+class UtilsClass <<static>> {
+    - {static} mainCamera : Camera
+    + {static} GetMouseWorldPosition() : Vector3
+    + {static} GetRandomDir() : Vector3
+    + {static} GetRotationAngle(vector:Vector3) : float
+}
+@enduml

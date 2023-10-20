@@ -1,0 +1,8 @@
+@startuml
+class ResourceGenerateData {
+    + maxTimer : float
+    + resourceType : ResourceTypeSO
+    + resourceDetectionRadius : float
+    + mxResourceAmount : int
+}
+@enduml

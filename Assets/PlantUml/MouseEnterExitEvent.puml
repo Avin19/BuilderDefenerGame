@@ -1,0 +1,11 @@
+@startuml
+class MouseEnterExitEvent {
+    +  <<event>> OnMouseEnter : EventHandler 
+    +  <<event>> OnMouseExit : EventHandler 
+    + OnPointerEnter(eventData:PointerEventData) : void
+    + OnPointerExit(eventData:PointerEventData) : void
+}
+MonoBehaviour <|-- MouseEnterExitEvent
+IPointerEnterHandler <|-- MouseEnterExitEvent
+IPointerExitHandler <|-- MouseEnterExitEvent
+@enduml
