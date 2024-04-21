@@ -53,11 +53,11 @@ To play Builder Defender, simply download the game files from the repository and
 
 ## Play the Game
 
-You can play the game on [itch.io](https://your-username.itch.io/medieval-base-Builder Defender). Enjoy!
+You can play the game on [itch.io](https://avinashyadav.itch.io/builderdefender). Enjoy!
 
 ## Gameplay Video
 
-Check out the gameplay video [here](https://www.youtube.com/watch?v=your-video-id).
+Check out the gameplay video [here](https://www.youtube.com/watch?v=8dqpQujI_DI&feature=youtu.be).
 
 ## Contributing
 
