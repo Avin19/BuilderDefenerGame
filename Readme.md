@@ -35,11 +35,8 @@ Builder Defender utilizes Dependency Injection to manage the dependencies betwee
 
 ### Class Diagram
 
-![Class Diagram]()
+![Class Diagram](out/include.png)
 
-### Sequence Diagram
-
-![Sequence Diagram]()
 
 ## Gameplay
 
