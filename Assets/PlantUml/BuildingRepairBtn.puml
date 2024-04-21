@@ -1,8 +1,0 @@
-@startuml
-class BuildingRepairBtn {
-    - healthSystem : HealthSystem
-    - goldResource : ResourceTypeSO
-    - Awake() : void
-}
-MonoBehaviour <|-- BuildingRepairBtn
-@enduml

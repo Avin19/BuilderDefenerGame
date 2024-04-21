@@ -1,6 +1,0 @@
-@startuml
-class ResourceTypeListSO {
-    + list : List<ResourceTypeSO>
-}
-ScriptableObject <|-- ResourceTypeListSO
-@enduml

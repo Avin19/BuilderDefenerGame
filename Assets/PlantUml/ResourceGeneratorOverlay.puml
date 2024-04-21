@@ -1,9 +1,0 @@
-@startuml
-class ResourceGeneratorOverlay {
-    - resourceGenerator : ResourceGenerator
-    - barTransform : Transform
-    - Start() : void
-    - Update() : void
-}
-MonoBehaviour <|-- ResourceGeneratorOverlay
-@enduml

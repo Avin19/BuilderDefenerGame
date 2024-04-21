@@ -1,6 +1,0 @@
-@startuml
-class BuildingTypeHolder {
-    + buildingType : BuildingTypeSO
-}
-MonoBehaviour <|-- BuildingTypeHolder
-@enduml

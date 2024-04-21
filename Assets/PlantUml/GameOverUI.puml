@@ -1,9 +1,0 @@
-@startuml
-class GameOverUI {
-    + {static} Instance : GameOverUI <<get>>
-    - Awake() : void
-    + Show() : void
-    - Hide() : void
-}
-MonoBehaviour <|-- GameOverUI
-@enduml

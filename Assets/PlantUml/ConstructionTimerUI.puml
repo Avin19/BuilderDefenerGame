@@ -1,9 +1,0 @@
-@startuml
-class ConstructionTimerUI {
-    - buildingConstruction : BuildingConstruction
-    - constructionProgressimage : Image
-    - Awake() : void
-    - Update() : void
-}
-MonoBehaviour <|-- ConstructionTimerUI
-@enduml
